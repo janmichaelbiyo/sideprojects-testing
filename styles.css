@@ -1,0 +1,14 @@
+.duh {
+    border: 4px;
+    border-style: dotted;
+}
+
+.newcol {
+    background-color: purple;
+    color: wheat;
+}
+
+.remcol {
+    border-style: inset;
+    border-color: orange;
+}

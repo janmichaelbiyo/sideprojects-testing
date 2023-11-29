@@ -3,15 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+   
 </head>
 <body>
     <button onclick="xavier('wahohaaa!')">xavier says</button>
     <p id="xavier_words"></p>
     <p id="counter"></p>
-    <button onclick="goingonup()">goingonup</button>
-    <button onclick="goingondown()">goingondown</button>
+    <button onclick="handler(event)">
+        <!-- clicke event happends here then it goes back up to traverse teh whole DOM -->
+        <span class="duh">click </span> me
+    </button>
+
+<!-- extra code to prove buttons  -->
+    <button onclick="handler(event)">click me again</button>
+    <!-- <button onclick="goingondown()">goingondown</button> -->
+
+    <button onclick="handlerClick(event)">click me again</button>
+
+    <button onclick="handlerButton(event)" class="remcol">click me again</button>
+
+    <section>
+            <h2> Forms </h2>
+            <form onsubmit="handlerSubmit(event)">
+                
+                <label for="firstName">First Name:</label>
+                <input id="firstName" 
+                name="firstName" 
+                placeholder="First Name" 
+                type="text"/>
+                
+                <label>
+                <span>Last Name:</span>
+                <input name="lastName" 
+                id="lastName"
+                 placeholder="Last Name" 
+                 type="text"/>
+                </label>      
+            <button type="submit"> Submit </button>
+            </form>
+    </section>
+
+
+    <!-- <ol id="penguins">
+        <li>
+            this time
+        </li> -->
+
+    <!-- </ol> -->
 
 
 
